@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{BED1608F-864E-5AAD-A5D5-B8CD8E870B81}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/External/PicaVoxel/PicaVoxelDemos/PicaInvaders/Scripts/InvadersWave.cs">
+    <Files>
+      <File FileName="Assets/External/PicaVoxel/PicaVoxelDemos/PicaInvaders/Scripts/InvadersWave.cs" Line="39" Column="10" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

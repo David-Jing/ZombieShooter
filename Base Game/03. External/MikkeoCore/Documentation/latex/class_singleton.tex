@@ -1,0 +1,82 @@
+\hypertarget{class_singleton}{}\section{Singleton$<$ T $>$ Class Template Reference}
+\label{class_singleton}\index{Singleton$<$ T $>$@{Singleton$<$ T $>$}}
+
+
+M\+O\+N\+O\+B\+E\+H\+A\+V\+I\+OR P\+S\+E\+U\+DO S\+I\+N\+G\+L\+E\+T\+ON A\+B\+S\+T\+R\+A\+CT C\+L\+A\+SS usage \+: can be attached to a gameobject and if not \+: this will create one on first access example \+: \textquotesingle{}\textquotesingle{}\textquotesingle{}public sealed class My\+Class \+: Singleton$<$\+My\+Class$>$ \{\textquotesingle{}\textquotesingle{}\textquotesingle{} references \+: \href{http://tinyurl.com/d498g8c}{\tt http\+://tinyurl.\+com/d498g8c} \+: \href{http://tinyurl.com/cc73a9h}{\tt http\+://tinyurl.\+com/cc73a9h} \+: \href{http://unifycommunity.com/wiki/index.php?title=Singleton}{\tt http\+://unifycommunity.\+com/wiki/index.\+php?title=\+Singleton}  
+
+
+Inheritance diagram for Singleton$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_singleton}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_singleton_a4f8894426fcc37471cb7f8d04574e08f}{On\+Application\+Quit} ()
+\begin{DoxyCompactList}\small\item\em for garbage collection \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_singleton_ade3da30710f7941729603c5d60dbf979}{Set\+Parent} (string parent\+G\+O\+Name)
+\begin{DoxyCompactList}\small\item\em parent this to another gameobject by string call from Awake if you so desire \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{class_singleton_af6b75d5d3b4e230ca3caeb79c686b157}{Is\+Awake}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+static T \hyperlink{class_singleton_a54103e8475b2a352ee759d5732307534}{Instance}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em gets the instance of this \hyperlink{class_singleton}{Singleton} use this for all instance calls\+: My\+Class.\+Instance.\+My\+Method(); or make your public methods static and have them use Instance internally for a nice clean interface \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+M\+O\+N\+O\+B\+E\+H\+A\+V\+I\+OR P\+S\+E\+U\+DO S\+I\+N\+G\+L\+E\+T\+ON A\+B\+S\+T\+R\+A\+CT C\+L\+A\+SS usage \+: can be attached to a gameobject and if not \+: this will create one on first access example \+: \textquotesingle{}\textquotesingle{}\textquotesingle{}public sealed class My\+Class \+: Singleton$<$\+My\+Class$>$ \{\textquotesingle{}\textquotesingle{}\textquotesingle{} references \+: \href{http://tinyurl.com/d498g8c}{\tt http\+://tinyurl.\+com/d498g8c} \+: \href{http://tinyurl.com/cc73a9h}{\tt http\+://tinyurl.\+com/cc73a9h} \+: \href{http://unifycommunity.com/wiki/index.php?title=Singleton}{\tt http\+://unifycommunity.\+com/wiki/index.\+php?title=\+Singleton} 
+
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em Mono\+Behaviour}]\end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\index{Singleton@{Singleton}!On\+Application\+Quit@{On\+Application\+Quit}}
+\index{On\+Application\+Quit@{On\+Application\+Quit}!Singleton@{Singleton}}
+\subsubsection[{\texorpdfstring{On\+Application\+Quit()}{OnApplicationQuit()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf Singleton}$<$ T $>$.On\+Application\+Quit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_singleton_a4f8894426fcc37471cb7f8d04574e08f}{}\label{class_singleton_a4f8894426fcc37471cb7f8d04574e08f}
+
+
+for garbage collection 
+
+\index{Singleton@{Singleton}!Set\+Parent@{Set\+Parent}}
+\index{Set\+Parent@{Set\+Parent}!Singleton@{Singleton}}
+\subsubsection[{\texorpdfstring{Set\+Parent(string parent\+G\+O\+Name)}{SetParent(string parentGOName)}}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Singleton}$<$ T $>$.Set\+Parent (
+\begin{DoxyParamCaption}
+\item[{string}]{parent\+G\+O\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_singleton_ade3da30710f7941729603c5d60dbf979}{}\label{class_singleton_ade3da30710f7941729603c5d60dbf979}
+
+
+parent this to another gameobject by string call from Awake if you so desire 
+
+
+
+\subsection{Property Documentation}
+\index{Singleton@{Singleton}!Instance@{Instance}}
+\index{Instance@{Instance}!Singleton@{Singleton}}
+\subsubsection[{\texorpdfstring{Instance}{Instance}}]{\setlength{\rightskip}{0pt plus 5cm}T {\bf Singleton}$<$ T $>$.Instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}\hypertarget{class_singleton_a54103e8475b2a352ee759d5732307534}{}\label{class_singleton_a54103e8475b2a352ee759d5732307534}
+
+
+gets the instance of this \hyperlink{class_singleton}{Singleton} use this for all instance calls\+: My\+Class.\+Instance.\+My\+Method(); or make your public methods static and have them use Instance internally for a nice clean interface 
+
+\index{Singleton@{Singleton}!Is\+Awake@{Is\+Awake}}
+\index{Is\+Awake@{Is\+Awake}!Singleton@{Singleton}}
+\subsubsection[{\texorpdfstring{Is\+Awake}{IsAwake}}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf Singleton}$<$ T $>$.Is\+Awake\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}\hypertarget{class_singleton_af6b75d5d3b4e230ca3caeb79c686b157}{}\label{class_singleton_af6b75d5d3b4e230ca3caeb79c686b157}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Mono\+Behaviours/\+Utility/\hyperlink{_singleton_8cs}{Singleton.\+cs}\end{DoxyCompactItemize}

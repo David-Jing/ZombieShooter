@@ -1,0 +1,6 @@
+.DS_Info
+version.txt
+commit_messages.txt
+**/Temp/*
+**/Library/*
+/**/*.csproj

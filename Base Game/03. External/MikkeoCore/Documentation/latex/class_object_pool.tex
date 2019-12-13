@@ -1,0 +1,470 @@
+\hypertarget{class_object_pool}{}\section{Object\+Pool Class Reference}
+\label{class_object_pool}\index{Object\+Pool@{Object\+Pool}}
+Inheritance diagram for Object\+Pool\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_object_pool}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_object_pool_1_1_startup_pool}{Startup\+Pool}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_object_pool_ad94dc76a38c1ce6273fe9a25590e2e7a}{Startup\+Pool\+Mode} \{ \hyperlink{class_object_pool_ad94dc76a38c1ce6273fe9a25590e2e7aa9ca8bcac74fbf1f118cc3589aeca836f}{Startup\+Pool\+Mode.\+Awake}, 
+\hyperlink{class_object_pool_ad94dc76a38c1ce6273fe9a25590e2e7aaa6122a65eaa676f700ae68d393054a37}{Startup\+Pool\+Mode.\+Start}, 
+\hyperlink{class_object_pool_ad94dc76a38c1ce6273fe9a25590e2e7aad72789e168d08643de0b38c7f868303a}{Startup\+Pool\+Mode.\+Call\+Manually}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_object_pool_ab3c9b59addc7edeb4c3bba7cf8d91be5}{Create\+Startup\+Pools} ()
+\item 
+static void \hyperlink{class_object_pool_abc0f2dc027be0d2a48bfed52d54ecefc}{Create\+Pool$<$ T $>$} (T prefab, int initial\+Pool\+Size)
+\item 
+static void \hyperlink{class_object_pool_ac33e07988fcd1488ab83374adf626573}{Create\+Pool} (Game\+Object prefab, int initial\+Pool\+Size)
+\item 
+static T \hyperlink{class_object_pool_ae79ca96adaf09d8a18b5b4d85dcf70c4}{Spawn$<$ T $>$} (T prefab, Transform parent, Vector3 position, Quaternion rotation)
+\item 
+static T \hyperlink{class_object_pool_ad86e0eff234f8e870c4edb5a0035f1ff}{Spawn$<$ T $>$} (T prefab, Vector3 position, Quaternion rotation)
+\item 
+static T \hyperlink{class_object_pool_a0ccbd02f24296bd2eb4f95c28dee9330}{Spawn$<$ T $>$} (T prefab, Transform parent, Vector3 position)
+\item 
+static T \hyperlink{class_object_pool_af26959630251e99e310f2e26cb2113e0}{Spawn$<$ T $>$} (T prefab, Vector3 position)
+\item 
+static T \hyperlink{class_object_pool_a53f3570f02c4dbe538a608230d2b924c}{Spawn$<$ T $>$} (T prefab, Transform parent)
+\item 
+static T \hyperlink{class_object_pool_aec4352184e8d24cb65c0af013d6966a0}{Spawn$<$ T $>$} (T prefab)
+\item 
+static Game\+Object \hyperlink{class_object_pool_aac781682280984a6e16726959fbd10ce}{Spawn} (Game\+Object prefab, Transform parent, Vector3 position, Quaternion rotation)
+\item 
+static Game\+Object \hyperlink{class_object_pool_ae14db9da6310d7d413fb649f7a14b7c0}{Spawn} (Game\+Object prefab, Transform parent, Vector3 position)
+\item 
+static Game\+Object \hyperlink{class_object_pool_a92b3d6fa0e836ca91c955eeadb91b76e}{Spawn} (Game\+Object prefab, Vector3 position, Quaternion rotation)
+\item 
+static Game\+Object \hyperlink{class_object_pool_a92a988e93c0c1ef2e91501dcb830daf4}{Spawn} (Game\+Object prefab, Transform parent)
+\item 
+static Game\+Object \hyperlink{class_object_pool_a8c54ceead77ff0cf8fc3b0ca96bc6cbf}{Spawn} (Game\+Object prefab, Vector3 position)
+\item 
+static Game\+Object \hyperlink{class_object_pool_a91648c2c53cc44d27fb83d8e1335a8c1}{Spawn} (Game\+Object prefab)
+\item 
+static void \hyperlink{class_object_pool_ae4823fca4c3fcdde54ad7b807eb31e48}{Recycle$<$ T $>$} (T obj)
+\item 
+static void \hyperlink{class_object_pool_add1b881196c057e119227c85c7b0ed74}{Recycle} (Game\+Object obj)
+\item 
+static void \hyperlink{class_object_pool_ae2fbe481953b5c767f8a581a6106a77e}{Recycle\+All$<$ T $>$} (T prefab)
+\item 
+static void \hyperlink{class_object_pool_a36e5adc797bedaf0b2906b1286dd58d1}{Recycle\+All} (Game\+Object prefab)
+\item 
+static void \hyperlink{class_object_pool_a882af948ed3280740b6a0a2d02256e69}{Recycle\+All} ()
+\item 
+static bool \hyperlink{class_object_pool_a0c5a28b7f337118b1619637bcac1ec19}{Is\+Spawned} (Game\+Object obj)
+\item 
+static int \hyperlink{class_object_pool_a5876a8c0ec6c0ed6ecd91b289212b261}{Count\+Pooled$<$ T $>$} (T prefab)
+\item 
+static int \hyperlink{class_object_pool_a5daa69415dd14071f05770dfcf3a5a39}{Count\+Pooled} (Game\+Object prefab)
+\item 
+static int \hyperlink{class_object_pool_a47d37208137e396aafd12cf2e7437cba}{Count\+Spawned$<$ T $>$} (T prefab)
+\item 
+static int \hyperlink{class_object_pool_adf9581d14685a9eb7342f2ce6988f8ec}{Count\+Spawned} (Game\+Object prefab)
+\item 
+static int \hyperlink{class_object_pool_a7ecbc4414712523a704f19df912db1f9}{Count\+All\+Pooled} ()
+\item 
+static List$<$ Game\+Object $>$ \hyperlink{class_object_pool_a4c66b4b085910a6182484b3507136b4e}{Get\+Pooled} (Game\+Object prefab, List$<$ Game\+Object $>$ list, bool append\+List)
+\item 
+static List$<$ T $>$ \hyperlink{class_object_pool_a8811c224a21b3be981c6a94bd7318de7}{Get\+Pooled$<$ T $>$} (T prefab, List$<$ T $>$ list, bool append\+List)
+\item 
+static List$<$ Game\+Object $>$ \hyperlink{class_object_pool_a9d4e7075c13216a1384adcb4dd302d69}{Get\+Spawned} (Game\+Object prefab, List$<$ Game\+Object $>$ list, bool append\+List)
+\item 
+static List$<$ T $>$ \hyperlink{class_object_pool_aa43366a11ed97db8ffc43ad45c79bf03}{Get\+Spawned$<$ T $>$} (T prefab, List$<$ T $>$ list, bool append\+List)
+\item 
+static void \hyperlink{class_object_pool_aaf07027a350db5fda7319939d46c2a3a}{Destroy\+Pooled} (Game\+Object prefab)
+\item 
+static void \hyperlink{class_object_pool_a349e231aa570b4a0965559c2d8e995b2}{Destroy\+Pooled$<$ T $>$} (T prefab)
+\item 
+static void \hyperlink{class_object_pool_ab48a02309b21b9ece9596b489231d339}{Destroy\+All} (Game\+Object prefab)
+\item 
+static void \hyperlink{class_object_pool_a8a463339ca4cb4b3b14edadc4143931d}{Destroy\+All$<$ T $>$} (T prefab)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_object_pool_ad94dc76a38c1ce6273fe9a25590e2e7a}{Startup\+Pool\+Mode} \hyperlink{class_object_pool_abfc2e120220d5a26728410df1298ecb3}{startup\+Pool\+Mode}
+\item 
+\hyperlink{class_object_pool_1_1_startup_pool}{Startup\+Pool}\mbox{[}$\,$\mbox{]} \hyperlink{class_object_pool_a6389859576fb2d968ceed034d8be7654}{startup\+Pools}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_object_pool}{Object\+Pool} \hyperlink{class_object_pool_ab67914e0f6e4521ae324566a3e06e927}{instance}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\index{Object\+Pool@{Object\+Pool}!Startup\+Pool\+Mode@{Startup\+Pool\+Mode}}
+\index{Startup\+Pool\+Mode@{Startup\+Pool\+Mode}!Object\+Pool@{Object\+Pool}}
+\subsubsection[{\texorpdfstring{Startup\+Pool\+Mode}{StartupPoolMode}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Object\+Pool.\+Startup\+Pool\+Mode}\hspace{0.3cm}{\ttfamily [strong]}}\hypertarget{class_object_pool_ad94dc76a38c1ce6273fe9a25590e2e7a}{}\label{class_object_pool_ad94dc76a38c1ce6273fe9a25590e2e7a}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Awake@{Awake}!Object\+Pool@{Object\+Pool}}\index{Object\+Pool@{Object\+Pool}!Awake@{Awake}}\item[{\em 
+Awake\hypertarget{class_object_pool_ad94dc76a38c1ce6273fe9a25590e2e7aa9ca8bcac74fbf1f118cc3589aeca836f}{}\label{class_object_pool_ad94dc76a38c1ce6273fe9a25590e2e7aa9ca8bcac74fbf1f118cc3589aeca836f}
+}]\index{Start@{Start}!Object\+Pool@{Object\+Pool}}\index{Object\+Pool@{Object\+Pool}!Start@{Start}}\item[{\em 
+Start\hypertarget{class_object_pool_ad94dc76a38c1ce6273fe9a25590e2e7aaa6122a65eaa676f700ae68d393054a37}{}\label{class_object_pool_ad94dc76a38c1ce6273fe9a25590e2e7aaa6122a65eaa676f700ae68d393054a37}
+}]\index{Call\+Manually@{Call\+Manually}!Object\+Pool@{Object\+Pool}}\index{Object\+Pool@{Object\+Pool}!Call\+Manually@{Call\+Manually}}\item[{\em 
+Call\+Manually\hypertarget{class_object_pool_ad94dc76a38c1ce6273fe9a25590e2e7aad72789e168d08643de0b38c7f868303a}{}\label{class_object_pool_ad94dc76a38c1ce6273fe9a25590e2e7aad72789e168d08643de0b38c7f868303a}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\index{Object\+Pool@{Object\+Pool}!Count\+All\+Pooled@{Count\+All\+Pooled}}
+\index{Count\+All\+Pooled@{Count\+All\+Pooled}!Object\+Pool@{Object\+Pool}}
+\subsubsection[{\texorpdfstring{Count\+All\+Pooled()}{CountAllPooled()}}]{\setlength{\rightskip}{0pt plus 5cm}static int Object\+Pool.\+Count\+All\+Pooled (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_object_pool_a7ecbc4414712523a704f19df912db1f9}{}\label{class_object_pool_a7ecbc4414712523a704f19df912db1f9}
+\index{Object\+Pool@{Object\+Pool}!Count\+Pooled@{Count\+Pooled}}
+\index{Count\+Pooled@{Count\+Pooled}!Object\+Pool@{Object\+Pool}}
+\subsubsection[{\texorpdfstring{Count\+Pooled(\+Game\+Object prefab)}{CountPooled(GameObject prefab)}}]{\setlength{\rightskip}{0pt plus 5cm}static int Object\+Pool.\+Count\+Pooled (
+\begin{DoxyParamCaption}
+\item[{Game\+Object}]{prefab}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_object_pool_a5daa69415dd14071f05770dfcf3a5a39}{}\label{class_object_pool_a5daa69415dd14071f05770dfcf3a5a39}
+\index{Object\+Pool@{Object\+Pool}!Count\+Pooled$<$ T $>$@{Count\+Pooled$<$ T $>$}}
+\index{Count\+Pooled$<$ T $>$@{Count\+Pooled$<$ T $>$}!Object\+Pool@{Object\+Pool}}
+\subsubsection[{\texorpdfstring{Count\+Pooled$<$ T $>$(\+T prefab)}{CountPooled< T >(T prefab)}}]{\setlength{\rightskip}{0pt plus 5cm}static int {\bf Object\+Pool.\+Count\+Pooled}$<$ T $>$ (
+\begin{DoxyParamCaption}
+\item[{T}]{prefab}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_object_pool_a5876a8c0ec6c0ed6ecd91b289212b261}{}\label{class_object_pool_a5876a8c0ec6c0ed6ecd91b289212b261}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em Component}]\end{description}
+\end{Desc}
+\index{Object\+Pool@{Object\+Pool}!Count\+Spawned@{Count\+Spawned}}
+\index{Count\+Spawned@{Count\+Spawned}!Object\+Pool@{Object\+Pool}}
+\subsubsection[{\texorpdfstring{Count\+Spawned(\+Game\+Object prefab)}{CountSpawned(GameObject prefab)}}]{\setlength{\rightskip}{0pt plus 5cm}static int Object\+Pool.\+Count\+Spawned (
+\begin{DoxyParamCaption}
+\item[{Game\+Object}]{prefab}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_object_pool_adf9581d14685a9eb7342f2ce6988f8ec}{}\label{class_object_pool_adf9581d14685a9eb7342f2ce6988f8ec}
+\index{Object\+Pool@{Object\+Pool}!Count\+Spawned$<$ T $>$@{Count\+Spawned$<$ T $>$}}
+\index{Count\+Spawned$<$ T $>$@{Count\+Spawned$<$ T $>$}!Object\+Pool@{Object\+Pool}}
+\subsubsection[{\texorpdfstring{Count\+Spawned$<$ T $>$(\+T prefab)}{CountSpawned< T >(T prefab)}}]{\setlength{\rightskip}{0pt plus 5cm}static int {\bf Object\+Pool.\+Count\+Spawned}$<$ T $>$ (
+\begin{DoxyParamCaption}
+\item[{T}]{prefab}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_object_pool_a47d37208137e396aafd12cf2e7437cba}{}\label{class_object_pool_a47d37208137e396aafd12cf2e7437cba}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em Component}]\end{description}
+\end{Desc}
+\index{Object\+Pool@{Object\+Pool}!Create\+Pool@{Create\+Pool}}
+\index{Create\+Pool@{Create\+Pool}!Object\+Pool@{Object\+Pool}}
+\subsubsection[{\texorpdfstring{Create\+Pool(\+Game\+Object prefab, int initial\+Pool\+Size)}{CreatePool(GameObject prefab, int initialPoolSize)}}]{\setlength{\rightskip}{0pt plus 5cm}static void Object\+Pool.\+Create\+Pool (
+\begin{DoxyParamCaption}
+\item[{Game\+Object}]{prefab, }
+\item[{int}]{initial\+Pool\+Size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_object_pool_ac33e07988fcd1488ab83374adf626573}{}\label{class_object_pool_ac33e07988fcd1488ab83374adf626573}
+\index{Object\+Pool@{Object\+Pool}!Create\+Pool$<$ T $>$@{Create\+Pool$<$ T $>$}}
+\index{Create\+Pool$<$ T $>$@{Create\+Pool$<$ T $>$}!Object\+Pool@{Object\+Pool}}
+\subsubsection[{\texorpdfstring{Create\+Pool$<$ T $>$(\+T prefab, int initial\+Pool\+Size)}{CreatePool< T >(T prefab, int initialPoolSize)}}]{\setlength{\rightskip}{0pt plus 5cm}static void {\bf Object\+Pool.\+Create\+Pool}$<$ T $>$ (
+\begin{DoxyParamCaption}
+\item[{T}]{prefab, }
+\item[{int}]{initial\+Pool\+Size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_object_pool_abc0f2dc027be0d2a48bfed52d54ecefc}{}\label{class_object_pool_abc0f2dc027be0d2a48bfed52d54ecefc}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em Component}]\end{description}
+\end{Desc}
+\index{Object\+Pool@{Object\+Pool}!Create\+Startup\+Pools@{Create\+Startup\+Pools}}
+\index{Create\+Startup\+Pools@{Create\+Startup\+Pools}!Object\+Pool@{Object\+Pool}}
+\subsubsection[{\texorpdfstring{Create\+Startup\+Pools()}{CreateStartupPools()}}]{\setlength{\rightskip}{0pt plus 5cm}static void Object\+Pool.\+Create\+Startup\+Pools (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_object_pool_ab3c9b59addc7edeb4c3bba7cf8d91be5}{}\label{class_object_pool_ab3c9b59addc7edeb4c3bba7cf8d91be5}
+\index{Object\+Pool@{Object\+Pool}!Destroy\+All@{Destroy\+All}}
+\index{Destroy\+All@{Destroy\+All}!Object\+Pool@{Object\+Pool}}
+\subsubsection[{\texorpdfstring{Destroy\+All(\+Game\+Object prefab)}{DestroyAll(GameObject prefab)}}]{\setlength{\rightskip}{0pt plus 5cm}static void Object\+Pool.\+Destroy\+All (
+\begin{DoxyParamCaption}
+\item[{Game\+Object}]{prefab}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_object_pool_ab48a02309b21b9ece9596b489231d339}{}\label{class_object_pool_ab48a02309b21b9ece9596b489231d339}
+\index{Object\+Pool@{Object\+Pool}!Destroy\+All$<$ T $>$@{Destroy\+All$<$ T $>$}}
+\index{Destroy\+All$<$ T $>$@{Destroy\+All$<$ T $>$}!Object\+Pool@{Object\+Pool}}
+\subsubsection[{\texorpdfstring{Destroy\+All$<$ T $>$(\+T prefab)}{DestroyAll< T >(T prefab)}}]{\setlength{\rightskip}{0pt plus 5cm}static void {\bf Object\+Pool.\+Destroy\+All}$<$ T $>$ (
+\begin{DoxyParamCaption}
+\item[{T}]{prefab}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_object_pool_a8a463339ca4cb4b3b14edadc4143931d}{}\label{class_object_pool_a8a463339ca4cb4b3b14edadc4143931d}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em Component}]\end{description}
+\end{Desc}
+\index{Object\+Pool@{Object\+Pool}!Destroy\+Pooled@{Destroy\+Pooled}}
+\index{Destroy\+Pooled@{Destroy\+Pooled}!Object\+Pool@{Object\+Pool}}
+\subsubsection[{\texorpdfstring{Destroy\+Pooled(\+Game\+Object prefab)}{DestroyPooled(GameObject prefab)}}]{\setlength{\rightskip}{0pt plus 5cm}static void Object\+Pool.\+Destroy\+Pooled (
+\begin{DoxyParamCaption}
+\item[{Game\+Object}]{prefab}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_object_pool_aaf07027a350db5fda7319939d46c2a3a}{}\label{class_object_pool_aaf07027a350db5fda7319939d46c2a3a}
+\index{Object\+Pool@{Object\+Pool}!Destroy\+Pooled$<$ T $>$@{Destroy\+Pooled$<$ T $>$}}
+\index{Destroy\+Pooled$<$ T $>$@{Destroy\+Pooled$<$ T $>$}!Object\+Pool@{Object\+Pool}}
+\subsubsection[{\texorpdfstring{Destroy\+Pooled$<$ T $>$(\+T prefab)}{DestroyPooled< T >(T prefab)}}]{\setlength{\rightskip}{0pt plus 5cm}static void {\bf Object\+Pool.\+Destroy\+Pooled}$<$ T $>$ (
+\begin{DoxyParamCaption}
+\item[{T}]{prefab}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_object_pool_a349e231aa570b4a0965559c2d8e995b2}{}\label{class_object_pool_a349e231aa570b4a0965559c2d8e995b2}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em Component}]\end{description}
+\end{Desc}
+\index{Object\+Pool@{Object\+Pool}!Get\+Pooled@{Get\+Pooled}}
+\index{Get\+Pooled@{Get\+Pooled}!Object\+Pool@{Object\+Pool}}
+\subsubsection[{\texorpdfstring{Get\+Pooled(\+Game\+Object prefab, List$<$ Game\+Object $>$ list, bool append\+List)}{GetPooled(GameObject prefab, List< GameObject > list, bool appendList)}}]{\setlength{\rightskip}{0pt plus 5cm}static List$<$Game\+Object$>$ Object\+Pool.\+Get\+Pooled (
+\begin{DoxyParamCaption}
+\item[{Game\+Object}]{prefab, }
+\item[{List$<$ Game\+Object $>$}]{list, }
+\item[{bool}]{append\+List}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_object_pool_a4c66b4b085910a6182484b3507136b4e}{}\label{class_object_pool_a4c66b4b085910a6182484b3507136b4e}
+\index{Object\+Pool@{Object\+Pool}!Get\+Pooled$<$ T $>$@{Get\+Pooled$<$ T $>$}}
+\index{Get\+Pooled$<$ T $>$@{Get\+Pooled$<$ T $>$}!Object\+Pool@{Object\+Pool}}
+\subsubsection[{\texorpdfstring{Get\+Pooled$<$ T $>$(\+T prefab, List$<$ T $>$ list, bool append\+List)}{GetPooled< T >(T prefab, List< T > list, bool appendList)}}]{\setlength{\rightskip}{0pt plus 5cm}static List$<$T$>$ {\bf Object\+Pool.\+Get\+Pooled}$<$ T $>$ (
+\begin{DoxyParamCaption}
+\item[{T}]{prefab, }
+\item[{List$<$ T $>$}]{list, }
+\item[{bool}]{append\+List}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_object_pool_a8811c224a21b3be981c6a94bd7318de7}{}\label{class_object_pool_a8811c224a21b3be981c6a94bd7318de7}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em Component}]\end{description}
+\end{Desc}
+\index{Object\+Pool@{Object\+Pool}!Get\+Spawned@{Get\+Spawned}}
+\index{Get\+Spawned@{Get\+Spawned}!Object\+Pool@{Object\+Pool}}
+\subsubsection[{\texorpdfstring{Get\+Spawned(\+Game\+Object prefab, List$<$ Game\+Object $>$ list, bool append\+List)}{GetSpawned(GameObject prefab, List< GameObject > list, bool appendList)}}]{\setlength{\rightskip}{0pt plus 5cm}static List$<$Game\+Object$>$ Object\+Pool.\+Get\+Spawned (
+\begin{DoxyParamCaption}
+\item[{Game\+Object}]{prefab, }
+\item[{List$<$ Game\+Object $>$}]{list, }
+\item[{bool}]{append\+List}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_object_pool_a9d4e7075c13216a1384adcb4dd302d69}{}\label{class_object_pool_a9d4e7075c13216a1384adcb4dd302d69}
+\index{Object\+Pool@{Object\+Pool}!Get\+Spawned$<$ T $>$@{Get\+Spawned$<$ T $>$}}
+\index{Get\+Spawned$<$ T $>$@{Get\+Spawned$<$ T $>$}!Object\+Pool@{Object\+Pool}}
+\subsubsection[{\texorpdfstring{Get\+Spawned$<$ T $>$(\+T prefab, List$<$ T $>$ list, bool append\+List)}{GetSpawned< T >(T prefab, List< T > list, bool appendList)}}]{\setlength{\rightskip}{0pt plus 5cm}static List$<$T$>$ {\bf Object\+Pool.\+Get\+Spawned}$<$ T $>$ (
+\begin{DoxyParamCaption}
+\item[{T}]{prefab, }
+\item[{List$<$ T $>$}]{list, }
+\item[{bool}]{append\+List}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_object_pool_aa43366a11ed97db8ffc43ad45c79bf03}{}\label{class_object_pool_aa43366a11ed97db8ffc43ad45c79bf03}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em Component}]\end{description}
+\end{Desc}
+\index{Object\+Pool@{Object\+Pool}!Is\+Spawned@{Is\+Spawned}}
+\index{Is\+Spawned@{Is\+Spawned}!Object\+Pool@{Object\+Pool}}
+\subsubsection[{\texorpdfstring{Is\+Spawned(\+Game\+Object obj)}{IsSpawned(GameObject obj)}}]{\setlength{\rightskip}{0pt plus 5cm}static bool Object\+Pool.\+Is\+Spawned (
+\begin{DoxyParamCaption}
+\item[{Game\+Object}]{obj}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_object_pool_a0c5a28b7f337118b1619637bcac1ec19}{}\label{class_object_pool_a0c5a28b7f337118b1619637bcac1ec19}
+\index{Object\+Pool@{Object\+Pool}!Recycle@{Recycle}}
+\index{Recycle@{Recycle}!Object\+Pool@{Object\+Pool}}
+\subsubsection[{\texorpdfstring{Recycle(\+Game\+Object obj)}{Recycle(GameObject obj)}}]{\setlength{\rightskip}{0pt plus 5cm}static void Object\+Pool.\+Recycle (
+\begin{DoxyParamCaption}
+\item[{Game\+Object}]{obj}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_object_pool_add1b881196c057e119227c85c7b0ed74}{}\label{class_object_pool_add1b881196c057e119227c85c7b0ed74}
+\index{Object\+Pool@{Object\+Pool}!Recycle$<$ T $>$@{Recycle$<$ T $>$}}
+\index{Recycle$<$ T $>$@{Recycle$<$ T $>$}!Object\+Pool@{Object\+Pool}}
+\subsubsection[{\texorpdfstring{Recycle$<$ T $>$(\+T obj)}{Recycle< T >(T obj)}}]{\setlength{\rightskip}{0pt plus 5cm}static void {\bf Object\+Pool.\+Recycle}$<$ T $>$ (
+\begin{DoxyParamCaption}
+\item[{T}]{obj}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_object_pool_ae4823fca4c3fcdde54ad7b807eb31e48}{}\label{class_object_pool_ae4823fca4c3fcdde54ad7b807eb31e48}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em Component}]\end{description}
+\end{Desc}
+\index{Object\+Pool@{Object\+Pool}!Recycle\+All@{Recycle\+All}}
+\index{Recycle\+All@{Recycle\+All}!Object\+Pool@{Object\+Pool}}
+\subsubsection[{\texorpdfstring{Recycle\+All(\+Game\+Object prefab)}{RecycleAll(GameObject prefab)}}]{\setlength{\rightskip}{0pt plus 5cm}static void Object\+Pool.\+Recycle\+All (
+\begin{DoxyParamCaption}
+\item[{Game\+Object}]{prefab}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_object_pool_a36e5adc797bedaf0b2906b1286dd58d1}{}\label{class_object_pool_a36e5adc797bedaf0b2906b1286dd58d1}
+\index{Object\+Pool@{Object\+Pool}!Recycle\+All@{Recycle\+All}}
+\index{Recycle\+All@{Recycle\+All}!Object\+Pool@{Object\+Pool}}
+\subsubsection[{\texorpdfstring{Recycle\+All()}{RecycleAll()}}]{\setlength{\rightskip}{0pt plus 5cm}static void Object\+Pool.\+Recycle\+All (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_object_pool_a882af948ed3280740b6a0a2d02256e69}{}\label{class_object_pool_a882af948ed3280740b6a0a2d02256e69}
+\index{Object\+Pool@{Object\+Pool}!Recycle\+All$<$ T $>$@{Recycle\+All$<$ T $>$}}
+\index{Recycle\+All$<$ T $>$@{Recycle\+All$<$ T $>$}!Object\+Pool@{Object\+Pool}}
+\subsubsection[{\texorpdfstring{Recycle\+All$<$ T $>$(\+T prefab)}{RecycleAll< T >(T prefab)}}]{\setlength{\rightskip}{0pt plus 5cm}static void {\bf Object\+Pool.\+Recycle\+All}$<$ T $>$ (
+\begin{DoxyParamCaption}
+\item[{T}]{prefab}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_object_pool_ae2fbe481953b5c767f8a581a6106a77e}{}\label{class_object_pool_ae2fbe481953b5c767f8a581a6106a77e}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em Component}]\end{description}
+\end{Desc}
+\index{Object\+Pool@{Object\+Pool}!Spawn@{Spawn}}
+\index{Spawn@{Spawn}!Object\+Pool@{Object\+Pool}}
+\subsubsection[{\texorpdfstring{Spawn(\+Game\+Object prefab, Transform parent, Vector3 position, Quaternion rotation)}{Spawn(GameObject prefab, Transform parent, Vector3 position, Quaternion rotation)}}]{\setlength{\rightskip}{0pt plus 5cm}static Game\+Object Object\+Pool.\+Spawn (
+\begin{DoxyParamCaption}
+\item[{Game\+Object}]{prefab, }
+\item[{Transform}]{parent, }
+\item[{Vector3}]{position, }
+\item[{Quaternion}]{rotation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_object_pool_aac781682280984a6e16726959fbd10ce}{}\label{class_object_pool_aac781682280984a6e16726959fbd10ce}
+\index{Object\+Pool@{Object\+Pool}!Spawn@{Spawn}}
+\index{Spawn@{Spawn}!Object\+Pool@{Object\+Pool}}
+\subsubsection[{\texorpdfstring{Spawn(\+Game\+Object prefab, Transform parent, Vector3 position)}{Spawn(GameObject prefab, Transform parent, Vector3 position)}}]{\setlength{\rightskip}{0pt plus 5cm}static Game\+Object Object\+Pool.\+Spawn (
+\begin{DoxyParamCaption}
+\item[{Game\+Object}]{prefab, }
+\item[{Transform}]{parent, }
+\item[{Vector3}]{position}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_object_pool_ae14db9da6310d7d413fb649f7a14b7c0}{}\label{class_object_pool_ae14db9da6310d7d413fb649f7a14b7c0}
+\index{Object\+Pool@{Object\+Pool}!Spawn@{Spawn}}
+\index{Spawn@{Spawn}!Object\+Pool@{Object\+Pool}}
+\subsubsection[{\texorpdfstring{Spawn(\+Game\+Object prefab, Vector3 position, Quaternion rotation)}{Spawn(GameObject prefab, Vector3 position, Quaternion rotation)}}]{\setlength{\rightskip}{0pt plus 5cm}static Game\+Object Object\+Pool.\+Spawn (
+\begin{DoxyParamCaption}
+\item[{Game\+Object}]{prefab, }
+\item[{Vector3}]{position, }
+\item[{Quaternion}]{rotation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_object_pool_a92b3d6fa0e836ca91c955eeadb91b76e}{}\label{class_object_pool_a92b3d6fa0e836ca91c955eeadb91b76e}
+\index{Object\+Pool@{Object\+Pool}!Spawn@{Spawn}}
+\index{Spawn@{Spawn}!Object\+Pool@{Object\+Pool}}
+\subsubsection[{\texorpdfstring{Spawn(\+Game\+Object prefab, Transform parent)}{Spawn(GameObject prefab, Transform parent)}}]{\setlength{\rightskip}{0pt plus 5cm}static Game\+Object Object\+Pool.\+Spawn (
+\begin{DoxyParamCaption}
+\item[{Game\+Object}]{prefab, }
+\item[{Transform}]{parent}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_object_pool_a92a988e93c0c1ef2e91501dcb830daf4}{}\label{class_object_pool_a92a988e93c0c1ef2e91501dcb830daf4}
+\index{Object\+Pool@{Object\+Pool}!Spawn@{Spawn}}
+\index{Spawn@{Spawn}!Object\+Pool@{Object\+Pool}}
+\subsubsection[{\texorpdfstring{Spawn(\+Game\+Object prefab, Vector3 position)}{Spawn(GameObject prefab, Vector3 position)}}]{\setlength{\rightskip}{0pt plus 5cm}static Game\+Object Object\+Pool.\+Spawn (
+\begin{DoxyParamCaption}
+\item[{Game\+Object}]{prefab, }
+\item[{Vector3}]{position}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_object_pool_a8c54ceead77ff0cf8fc3b0ca96bc6cbf}{}\label{class_object_pool_a8c54ceead77ff0cf8fc3b0ca96bc6cbf}
+\index{Object\+Pool@{Object\+Pool}!Spawn@{Spawn}}
+\index{Spawn@{Spawn}!Object\+Pool@{Object\+Pool}}
+\subsubsection[{\texorpdfstring{Spawn(\+Game\+Object prefab)}{Spawn(GameObject prefab)}}]{\setlength{\rightskip}{0pt plus 5cm}static Game\+Object Object\+Pool.\+Spawn (
+\begin{DoxyParamCaption}
+\item[{Game\+Object}]{prefab}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_object_pool_a91648c2c53cc44d27fb83d8e1335a8c1}{}\label{class_object_pool_a91648c2c53cc44d27fb83d8e1335a8c1}
+\index{Object\+Pool@{Object\+Pool}!Spawn$<$ T $>$@{Spawn$<$ T $>$}}
+\index{Spawn$<$ T $>$@{Spawn$<$ T $>$}!Object\+Pool@{Object\+Pool}}
+\subsubsection[{\texorpdfstring{Spawn$<$ T $>$(\+T prefab, Transform parent, Vector3 position, Quaternion rotation)}{Spawn< T >(T prefab, Transform parent, Vector3 position, Quaternion rotation)}}]{\setlength{\rightskip}{0pt plus 5cm}static T {\bf Object\+Pool.\+Spawn}$<$ T $>$ (
+\begin{DoxyParamCaption}
+\item[{T}]{prefab, }
+\item[{Transform}]{parent, }
+\item[{Vector3}]{position, }
+\item[{Quaternion}]{rotation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_object_pool_ae79ca96adaf09d8a18b5b4d85dcf70c4}{}\label{class_object_pool_ae79ca96adaf09d8a18b5b4d85dcf70c4}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em Component}]\end{description}
+\end{Desc}
+\index{Object\+Pool@{Object\+Pool}!Spawn$<$ T $>$@{Spawn$<$ T $>$}}
+\index{Spawn$<$ T $>$@{Spawn$<$ T $>$}!Object\+Pool@{Object\+Pool}}
+\subsubsection[{\texorpdfstring{Spawn$<$ T $>$(\+T prefab, Vector3 position, Quaternion rotation)}{Spawn< T >(T prefab, Vector3 position, Quaternion rotation)}}]{\setlength{\rightskip}{0pt plus 5cm}static T {\bf Object\+Pool.\+Spawn}$<$ T $>$ (
+\begin{DoxyParamCaption}
+\item[{T}]{prefab, }
+\item[{Vector3}]{position, }
+\item[{Quaternion}]{rotation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_object_pool_ad86e0eff234f8e870c4edb5a0035f1ff}{}\label{class_object_pool_ad86e0eff234f8e870c4edb5a0035f1ff}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em Component}]\end{description}
+\end{Desc}
+\index{Object\+Pool@{Object\+Pool}!Spawn$<$ T $>$@{Spawn$<$ T $>$}}
+\index{Spawn$<$ T $>$@{Spawn$<$ T $>$}!Object\+Pool@{Object\+Pool}}
+\subsubsection[{\texorpdfstring{Spawn$<$ T $>$(\+T prefab, Transform parent, Vector3 position)}{Spawn< T >(T prefab, Transform parent, Vector3 position)}}]{\setlength{\rightskip}{0pt plus 5cm}static T {\bf Object\+Pool.\+Spawn}$<$ T $>$ (
+\begin{DoxyParamCaption}
+\item[{T}]{prefab, }
+\item[{Transform}]{parent, }
+\item[{Vector3}]{position}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_object_pool_a0ccbd02f24296bd2eb4f95c28dee9330}{}\label{class_object_pool_a0ccbd02f24296bd2eb4f95c28dee9330}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em Component}]\end{description}
+\end{Desc}
+\index{Object\+Pool@{Object\+Pool}!Spawn$<$ T $>$@{Spawn$<$ T $>$}}
+\index{Spawn$<$ T $>$@{Spawn$<$ T $>$}!Object\+Pool@{Object\+Pool}}
+\subsubsection[{\texorpdfstring{Spawn$<$ T $>$(\+T prefab, Vector3 position)}{Spawn< T >(T prefab, Vector3 position)}}]{\setlength{\rightskip}{0pt plus 5cm}static T {\bf Object\+Pool.\+Spawn}$<$ T $>$ (
+\begin{DoxyParamCaption}
+\item[{T}]{prefab, }
+\item[{Vector3}]{position}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_object_pool_af26959630251e99e310f2e26cb2113e0}{}\label{class_object_pool_af26959630251e99e310f2e26cb2113e0}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em Component}]\end{description}
+\end{Desc}
+\index{Object\+Pool@{Object\+Pool}!Spawn$<$ T $>$@{Spawn$<$ T $>$}}
+\index{Spawn$<$ T $>$@{Spawn$<$ T $>$}!Object\+Pool@{Object\+Pool}}
+\subsubsection[{\texorpdfstring{Spawn$<$ T $>$(\+T prefab, Transform parent)}{Spawn< T >(T prefab, Transform parent)}}]{\setlength{\rightskip}{0pt plus 5cm}static T {\bf Object\+Pool.\+Spawn}$<$ T $>$ (
+\begin{DoxyParamCaption}
+\item[{T}]{prefab, }
+\item[{Transform}]{parent}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_object_pool_a53f3570f02c4dbe538a608230d2b924c}{}\label{class_object_pool_a53f3570f02c4dbe538a608230d2b924c}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em Component}]\end{description}
+\end{Desc}
+\index{Object\+Pool@{Object\+Pool}!Spawn$<$ T $>$@{Spawn$<$ T $>$}}
+\index{Spawn$<$ T $>$@{Spawn$<$ T $>$}!Object\+Pool@{Object\+Pool}}
+\subsubsection[{\texorpdfstring{Spawn$<$ T $>$(\+T prefab)}{Spawn< T >(T prefab)}}]{\setlength{\rightskip}{0pt plus 5cm}static T {\bf Object\+Pool.\+Spawn}$<$ T $>$ (
+\begin{DoxyParamCaption}
+\item[{T}]{prefab}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_object_pool_aec4352184e8d24cb65c0af013d6966a0}{}\label{class_object_pool_aec4352184e8d24cb65c0af013d6966a0}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em Component}]\end{description}
+\end{Desc}
+
+
+\subsection{Member Data Documentation}
+\index{Object\+Pool@{Object\+Pool}!startup\+Pool\+Mode@{startup\+Pool\+Mode}}
+\index{startup\+Pool\+Mode@{startup\+Pool\+Mode}!Object\+Pool@{Object\+Pool}}
+\subsubsection[{\texorpdfstring{startup\+Pool\+Mode}{startupPoolMode}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Startup\+Pool\+Mode} Object\+Pool.\+startup\+Pool\+Mode}\hypertarget{class_object_pool_abfc2e120220d5a26728410df1298ecb3}{}\label{class_object_pool_abfc2e120220d5a26728410df1298ecb3}
+\index{Object\+Pool@{Object\+Pool}!startup\+Pools@{startup\+Pools}}
+\index{startup\+Pools@{startup\+Pools}!Object\+Pool@{Object\+Pool}}
+\subsubsection[{\texorpdfstring{startup\+Pools}{startupPools}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Startup\+Pool} \mbox{[}$\,$\mbox{]} Object\+Pool.\+startup\+Pools}\hypertarget{class_object_pool_a6389859576fb2d968ceed034d8be7654}{}\label{class_object_pool_a6389859576fb2d968ceed034d8be7654}
+
+
+\subsection{Property Documentation}
+\index{Object\+Pool@{Object\+Pool}!instance@{instance}}
+\index{instance@{instance}!Object\+Pool@{Object\+Pool}}
+\subsubsection[{\texorpdfstring{instance}{instance}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Object\+Pool} Object\+Pool.\+instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}\hypertarget{class_object_pool_ab67914e0f6e4521ae324566a3e06e927}{}\label{class_object_pool_ab67914e0f6e4521ae324566a3e06e927}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Mono\+Behaviours/\+Pooling/\hyperlink{_object_pool_8cs}{Object\+Pool.\+cs}\end{DoxyCompactItemize}
